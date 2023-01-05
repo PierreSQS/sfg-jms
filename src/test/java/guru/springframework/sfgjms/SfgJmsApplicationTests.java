@@ -1,16 +1,18 @@
 package guru.springframework.sfgjms;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringRunner.class)
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ApplicationContext;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
 @SpringBootTest
-public class SfgJmsApplicationTests {
+class SfgJmsApplicationTests {
 
 	@Test
-	public void contextLoads() {
+	void contextLoads(ApplicationContext appCtx) {
+		assertThat(appCtx).isNotNull();
 	}
 
 }

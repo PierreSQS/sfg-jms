@@ -53,6 +53,7 @@ local.properties
 # Intellij
 ######################
 .idea/
+target
 *.iml
 *.iws
 *.ipr
@@ -139,4 +140,3 @@ Desktop.ini
 ######################
 .eslintcache
 /.idea/
-
